@@ -27,3 +27,10 @@ switch(light) {
         //this block will run if no condition matches
        console.log('The light is not green, orange, or red');
 }
+
+
+
+// Ternay operator (conditional operator)
+let isRaining = true;
+let weatherMessage = isRaining ? "It's raining." : "It's not raining.";
+console.log(weatherMessage);
