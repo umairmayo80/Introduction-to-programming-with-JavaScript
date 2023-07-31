@@ -26,6 +26,7 @@ console.log('"3" + 3:', "3" + 3); // Output: "3" + 3: 33 (string concatenation)
 
 // Here, the last "3" is converted to a number as +"3", and then the addition is performed.
 console.log('3 + +"3":', 3 + +"3"); // Output: 3 + +"3": 6
+console.log('3 + -"3":', 3 + -"3"); // Output: 3 + +"3": 6
 
 console.log('3 + 3 - 3:', 3 + 3 - 3); // Output: 3 + 3 - 3: 6
 
