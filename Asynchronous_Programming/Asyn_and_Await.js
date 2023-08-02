@@ -40,11 +40,19 @@ myFunction().then(
 
 async function myDisplay() {
     let myPromise = new Promise(function(resolve, reject) {
-      resolve("I love You !!");
+      // resolve("I love You !!");
+      reject("Error")
     });
-    let value = await myPromise;
-    console.log(value)
+    // let value = await myPromise;
+    // console.log(value)
     // return value;
+
+    try {
+      const result = await myPromise;
+      console.log(result); // Output: { name: "John", age: 30 }
+    } catch (error) {
+      console.error(error);
+    }
   }
   
   myDisplay()
