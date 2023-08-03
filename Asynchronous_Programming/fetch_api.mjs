@@ -4,7 +4,10 @@
 import fetch from 'node-fetch';
 
 fetch('https://jsonplaceholder.typicode.com/todos/5')
-      .then(response => response.json())
+      .then(response => {
+            console.log("resolved:\n",response)
+            return response.json() //it returns a promise
+      })
       .then(json => console.log(json))
       .catch(error => console.error('Error:', error));
 
