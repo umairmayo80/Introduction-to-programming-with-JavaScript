@@ -56,3 +56,4 @@ async function myDisplay() {
   }
   
   myDisplay()
+  console.log(2)
